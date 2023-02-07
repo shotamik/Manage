@@ -23,3 +23,32 @@ const swiper = new Swiper('.swiper', {
       el: '.swiper-scrollbar',
     },
 });
+
+
+
+const form = document.querySelector(".form");
+const email = document.querySelector("#email");
+
+const emailError = document.querySelector("#email-error");
+
+let isEmailValid = false;
+
+function validateUserEmail() {
+	if (!email.validity.valid) {
+		email.classList.remove("correct");
+		email.classList.add("error");
+
+		if (email.validity.typeMismatch) {
+			emailError.innerText = "Please insert a valid email";
+		}
+
+		isEmailValid = false;
+	}  else {
+	  email.classList.add("correct");
+	 	email.classList.remove("error");
+	 	emailError.innerText = "";
+	 	isEmailValid = true;
+	}
+
+	return isEmailValid;
+}
