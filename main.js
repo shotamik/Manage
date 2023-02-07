@@ -67,3 +67,33 @@ form.addEventListener("submit", (e) => {
 });
 
 email.addEventListener("input", validateUserEmail);
+
+
+const hamburger = document.querySelector(".hamburger")
+const closeIcon = document.querySelector(".icon-close")
+const navmobilenav = document.querySelector(".nav-mobile-nav")
+
+
+hamburger.onclick = function () {
+  const hamburger = document.querySelector(".hamburger")
+  const closeIcon = document.querySelector(".icon-close")
+  const navmobilenav = document.querySelector(".nav-mobile-nav")
+
+
+  hamburger.classList.toggle("active");
+  closeIcon.classList.toggle("active")
+  navmobilenav.classList.toggle("active")
+  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+closeIcon.onclick = function () {
+  const hamburger = document.querySelector(".hamburger")
+  const closeIcon = document.querySelector(".icon-close")
+  const navmobilenav = document.querySelector(".nav-mobile-nav")
+
+  hamburger.classList.remove("active");
+  closeIcon.classList.remove("active")
+  navmobilenav.classList.remove("active")
+  document.body.style.backgroundColor = "rgb(255, 255, 255)";
+
+}
