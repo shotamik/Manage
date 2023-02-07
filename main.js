@@ -52,3 +52,18 @@ function validateUserEmail() {
 
 	return isEmailValid;
 }
+
+
+
+form.addEventListener("submit", (e) => {
+	e.preventDefault();
+
+	const isValidEmail = validateUserEmail();
+
+	if (isValidEmail) {
+	
+		form.reset();
+	}
+});
+
+email.addEventListener("input", validateUserEmail);
