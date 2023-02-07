@@ -55,25 +55,21 @@ ul, li {
     height: 45px;
 }
 
-.manage {
-    font-size: 35px;
-    color: #242d52;
-    display: flex;
-    align-items: center;   
-}
+
 
 .header {
     display: flex;
-    width: 98%;
+    width: 100%;
     justify-content: space-evenly;
     align-items: center;
     margin-top: 50px;
+    margin-left: 15px;
 }
 
 .ul {
     display: flex;
-    width: 440px;
-    justify-content: space-between;
+    width: 570px;
+    justify-content: space-evenly;
     transition-duration: 0.2s;
 }
 
